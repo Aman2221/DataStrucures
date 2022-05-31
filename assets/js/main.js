@@ -57,9 +57,10 @@ var Stack = function(){
         if(this.count === 0){
             return 'undefined'
         }
-        this.count--;
+        
         var result = this.storage[this.count];
         delete this.storage[this.count];
+        this.count--;
         return result
     }
 
